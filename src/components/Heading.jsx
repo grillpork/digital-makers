@@ -3,40 +3,61 @@ import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaPlay } from "react-icons/fa";
+import Slider from "./Slider";
 
 const Heading = () => {
   return (
-    <div>
+    <div className="font-sans font-medium">
       <header className=".header flex flex-col justify-center items-center w-full h-[80vh]">
-        <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png" alt="" />
-        <h1>november 8-9 live and virtual</h1>
-        <h1>digital makers</h1>
+        <img
+          src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png"
+          className="relative w-full h-full object-cover"
+        />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 space-y-8">
+          <div className="flex justify-center items-center gap-8 text-xl uppercase">
+            <h1>november 8-9 </h1>
+            <h1>live and virtual</h1>
+          </div>
+          <h1 className="text-[8rem] font-bold ">Digital Makers</h1>
+        </div>
       </header>
-      <section>
-        <h1>arts center, san francisco</h1>
-        <h2>
+
+      <section className="w-full flex flex-col justify-center items-center gap-6">
+        <h1 className="text-xl uppercase">arts center, san francisco</h1>
+        <h2 className="w-[500px] text-center text-xl text-neutral-400 font-bold">
           Join us at Digital Makers, where digital creators unite to innovate,
           collaborate, and inspire new possibilities.
         </h2>
-        <a href="#booking">book your spot now</a>
+        <a
+          href="#booking"
+          className=" px-8 py-2 bg-blue-700 rounded uppercase "
+        >
+          book your spot now
+        </a>
       </section>
 
-      <section>
-        <h1>about the conference</h1>
-        <div>
-          <h1>Where Digital Creater</h1>
-          <h1>Unite and Shape</h1>
-          <h1>Tomorow's Innovation</h1>
-          <a href="#booking">book your spot now</a>
+      <Slider />
+
+      <section
+        id="about"
+        className="grid grid-cols-2 gap-8 max-w-[1400px] mx-auto mt-24"
+      >
+        <h1 className="text-xl uppercase">about the conference</h1>
+        <div className="flex flex-col justify-start items-starttext-start font-medium ">
+          <h1 className="text-[64px] flex flex-col font-bold text-base/18 mb-10 ">
+            Where Digital Creater Unite and Shape
+            <span className="text-[64px] text-neutral-500">
+              Tomorow's Innovation
+            </span>
+          </h1>
+
+          <a
+            href="#booking"
+            className=" px-8 py-2 bg-blue-700 rounded uppercase w-fit "
+          >
+            book your spot now
+          </a>
         </div>
-      </section>
-
-      <section>
-        <ul>
-          <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80de_medium-shot-people-work-meeting%20(1).jpg" />
-          <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80dc_female-business-executive-giving-speech%20(1)%20(1).jpg" />
-          <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80dd_male-business-executive-giving-speech%20(1).jpg" />
-        </ul>
       </section>
 
       <section>

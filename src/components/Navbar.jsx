@@ -1,11 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-between items-center py-[24px] px-[32px]">
-      <ul className="flex gap-4">
+    <motion.div initial={{ y: -100 }} animate={{ y: 0 }}  className=" grid grid-cols-3 content-center py-6 px-8 w-full sticky top-0 z-50">
+      <ul className="flex gap-4 text-sm font-medium">
         <a href="#about" onScroll={true} className="p-[10px]">
-          About
+          ABOUT
         </a>
         <a href="#schedule" onScroll={true} className="p-[10px]">
           SCHEDULE
@@ -20,10 +21,10 @@ const Navbar = () => {
           FAQ
         </a>
       </ul>
-      <a href="#logo" className="">
+      <a href="#logo" className="flex justify-center items-center">
         <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80da_logo.png" className="w-[194px]"/>
       </a>
-      <div className=" space-x-4">
+      <div className="flex justify-end items-center gap-8 ">
         <a href="#pricing" onScroll={true}>
           PRICING
         </a>
@@ -31,7 +32,7 @@ const Navbar = () => {
           SIGN IN
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
