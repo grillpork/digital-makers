@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <motion.div initial={{ y: -100 }} animate={{ y: 0 }}  className=" grid grid-cols-3 content-center py-6 px-8 w-full sticky top-0 z-50">
+    <motion.div initial={{ y: -100 }} animate={{ y: 0 }}  
+    className=" grid grid-cols-3 content-center py-6 px-8 w-full sticky top-0 z-50 bg-gradient-to-b from-[#000000] to-transparent text-white">
       <ul className="flex gap-4 text-sm font-medium">
         <a href="#about" onScroll={true} className="p-[10px]">
           ABOUT

@@ -2,7 +2,6 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
-import { FaPlay } from "react-icons/fa";
 import Slider from "./Slider";
 
 const Heading = () => {
@@ -13,12 +12,14 @@ const Heading = () => {
           src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png"
           className="relative w-full h-full object-cover"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 space-y-8">
-          <div className="flex justify-center items-center gap-8 text-xl uppercase">
+        <div className="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+          <div className="flex justify-center items-center gap-8 w-full text-xl uppercase">
             <h1>november 8-9 </h1>
             <h1>live and virtual</h1>
           </div>
-          <h1 className="text-[8rem] font-bold ">Digital Makers</h1>
+          <h1 className="text-[8rem] font-bold w-full text-center ">
+            Digital Makers
+          </h1>
         </div>
       </header>
 
@@ -28,10 +29,7 @@ const Heading = () => {
           Join us at Digital Makers, where digital creators unite to innovate,
           collaborate, and inspire new possibilities.
         </h2>
-        <a
-          href="#booking"
-          className=" px-8 py-2 bg-blue-700 rounded uppercase "
-        >
+        <a href="#booking" className=" px-8 py-2 bg-blue-700 rounded uppercase">
           book your spot now
         </a>
       </section>
@@ -40,110 +38,121 @@ const Heading = () => {
 
       <section
         id="about"
-        className="grid grid-cols-2 gap-8 max-w-[1400px] mx-auto mt-24"
+        className="grid grid-cols-2 gap-8 max-w-[1280px] mx-auto mt-24 "
       >
         <h1 className="text-xl uppercase">about the conference</h1>
         <div className="flex flex-col justify-start items-starttext-start font-medium ">
-          <h1 className="text-[64px] flex flex-col font-bold text-base/18 mb-10 ">
+          <h1 className="text-[48px] flex flex-col font-bold text-base/18 mb-10 ">
             Where Digital Creater Unite and Shape
-            <span className="text-[64px] text-neutral-500">
+            <span className="text-[48px] text-neutral-500">
               Tomorow's Innovation
             </span>
           </h1>
 
           <a
             href="#booking"
-            className=" px-8 py-2 bg-blue-700 rounded uppercase w-fit "
+            className=" px-8 py-2 bg-blue-700 rounded uppercase w-fit"
           >
             book your spot now
           </a>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h1>Conferrence 2022</h1>
-          <h1>
+      <section className=" grid grid-cols-2 gap-4 max-w-[1280px] mx-auto mt-32 overflow-hidden h-[650px] rounded-2xl">
+        <div className="text-xl font-medium">
+          <h1 className="mb-4">Conferrence 2022</h1>
+          <h1 className="mb-8 w-full text-neutral-400">
             In 2022, Makers brought together 500 creators, sparking
             collaborations that led to groundbreaking digital projects.
           </h1>
-          <a>
-            <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80dd_male-business-executive-giving-speech%20(1).jpg" />
-            <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e4_conf%2022.png" />
+          <a className="relative overflow-hidden ">
+            <img
+              src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e2_video%20thumb%201%20(1).png"
+              className="w-full  object-cover  rounded-2xl"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e4_conf%2022.png"
+              className="absolute bottom-12 left-8 w-[215px]"
+            />
+            <div
+              className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-neutral-300   bg-[rgb(255,255,255,0.3)] backdrop-blur rounded-full
+            flex justify-center items-center
+            "
+            >
+              <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e3_Polygon%201.svg" />
+            </div>
           </a>
         </div>
 
-        <div>
-          <h1>Conferrence 2022</h1>
-          <h1>
-            In 2022, Makers brought together 500 creators, sparking
+        <div className="text-xl font-medium">
+          <h1 className="mb-4">Conferrence 2023</h1>
+          <h1 className="mb-8 w-full text-neutral-400">
+            In 2023, Makers brought together 500 creators, sparking
             collaborations that led to groundbreaking digital projects.
           </h1>
-          <a>
-            <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e1_video%20thumb%202.png" />
-            <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e4_conf%2022.png" />
+          <a className="relative overflow-hidden ">
+            <img
+              src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e1_video%20thumb%202.png"
+              className="w-full  object-cover rounded-2xl"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e4_conf%2022.png"
+              className="absolute bottom-12 left-8 w-[215px]"
+            />
+            <div
+              className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 border border-neutral-300   bg-[rgb(255,255,255,0.3)] backdrop-blur rounded-full
+            flex justify-center items-center
+            "
+            >
+              <img src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e3_Polygon%201.svg" />
+            </div>
           </a>
         </div>
       </section>
 
       <section>
         <h1>Schedule</h1>
-        <button onClick={() => console.log("clicked")}>
+        <button>
           <h1>Schedule</h1>
         </button>
       </section>
 
-      <section>
-        <h1>All Speakers</h1>
-        <p>
-          Renowned speakers from top tech companies and innovative startups will
-          share insights into digital creation trends.
-        </p>
+      <section className=" w-full h-[100vh] max-w-[1280px] mx-auto mt-24">
+        <div className="flex flex-col w-1/2 gap-4 mb-12">
+          <h1 className="text-5xl ">All Speakers</h1>
+          <p className="text-xl text-neutral-400">
+            Renowned speakers from top tech companies and innovative startups
+            will share insights into digital creation trends.
+          </p>
+        </div>
 
-        <section>
-          <img src="" />
-          <div>
-            <h1>
-              Alex pioneered AI integration in design tools, revolutionizing how
-              creators approach digital content creation.
-            </h1>
-            <div className="social-icons">
-              <FaFacebookF />
-              <BiLogoInstagramAlt />
-              <RiTwitterXFill />
-            </div>
-          </div>
-        </section>
+        <div className=" grid grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-3 gap-8">
+  <section className="hover:opacity-100">
+    <div className="info-speaker relative w-full h-full rounded-2xl overflow-hidden block">
+      <img
+        src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e9_speaker%203.png"
+        className="rounded-2xl h-full w-full object-cover transform transition-transform duration-300 hover:scale-110"
+      />
+      <div className="flex flex-col justify-between w-full h-full items-start absolute inset-0 p-8 bg-[rgba(0,0,0,0.5)] backdrop-blur text-white">
+        <h1 className="text-2xl">
+          Michael leads Creatify Labs, empowering creators with
+          cutting-edge tools for immersive digital experiences.
+        </h1>
+        <div className="flex gap-2">
+          <FaFacebookF className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+          <BiLogoInstagramAlt className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+          <RiTwitterXFill className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1>Info</h1>
+    </div>
+  </section>
+</div>
 
-        <section>
-          <img src="" />
-          <div>
-            <h1>
-              Sophia shapes global digital trends, driving innovative strategies
-              in multimedia content and user engagement.
-            </h1>
-            <div className="social-icons">
-              <FaFacebookF />
-              <BiLogoInstagramAlt />
-              <RiTwitterXFill />
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <img src="" />
-          <div>
-            <h1>
-              Michael leads Creatify Labs, empowering creators with cutting-edge
-              tools for immersive digital experiences.
-            </h1>
-            <div className="social-icons">
-              <FaFacebookF />
-              <BiLogoInstagramAlt />
-              <RiTwitterXFill />
-            </div>
-          </div>
-        </section>
+        </div>
       </section>
     </div>
   );

@@ -9,13 +9,10 @@ html {
 
 body {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: #444;
   color: white;
 }
 
 .header {
   background: url("https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png");
-  background-size:cover ;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
