@@ -1,8 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import Slider from "./Slider";
+import Sponsors from "./Sponsors";
+import Pricing from "./Pricing";
 
 const Heading = () => {
   return (
@@ -37,7 +40,6 @@ const Heading = () => {
       <Slider />
 
       <section
-        id="about"
         className="grid grid-cols-2 gap-8 max-w-[1280px] mx-auto mt-24 "
       >
         <h1 className="text-xl uppercase">about the conference</h1>
@@ -58,14 +60,15 @@ const Heading = () => {
         </div>
       </section>
 
+      {/* About Section */}
       <section className=" grid grid-cols-2 gap-4 max-w-[1280px] mx-auto mt-32 overflow-hidden h-[650px] rounded-2xl">
-        <div className="text-xl font-medium">
-          <h1 className="mb-4">Conferrence 2022</h1>
+        <div id="about" className="text-xl font-medium">
+          <h1 className="mb-4">Conference 2022</h1>
           <h1 className="mb-8 w-full text-neutral-400">
             In 2022, Makers brought together 500 creators, sparking
             collaborations that led to groundbreaking digital projects.
           </h1>
-          <a className="relative overflow-hidden ">
+          <a className="relative overflow-hidden cursor-pointer">
             <img
               src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e2_video%20thumb%201%20(1).png"
               className="w-full  object-cover  rounded-2xl"
@@ -85,12 +88,12 @@ const Heading = () => {
         </div>
 
         <div className="text-xl font-medium">
-          <h1 className="mb-4">Conferrence 2023</h1>
+          <h1 className="mb-4">Conference 2023</h1>
           <h1 className="mb-8 w-full text-neutral-400">
             In 2023, Makers brought together 500 creators, sparking
             collaborations that led to groundbreaking digital projects.
           </h1>
-          <a className="relative overflow-hidden ">
+          <a className="relative overflow-hidden cursor-pointer">
             <img
               src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e1_video%20thumb%202.png"
               className="w-full  object-cover rounded-2xl"
@@ -117,7 +120,7 @@ const Heading = () => {
         </button>
       </section>
 
-      <section className=" w-full h-[100vh] max-w-[1280px] mx-auto mt-24">
+      <section id="speakers" className=" w-full h-[100vh] max-w-[1280px] mx-auto mt-24">
         <div className="flex flex-col w-1/2 gap-4 mb-12">
           <h1 className="text-5xl ">All Speakers</h1>
           <p className="text-xl text-neutral-400">
@@ -127,33 +130,85 @@ const Heading = () => {
         </div>
 
         <div className=" grid grid-cols-3 gap-8 ">
-        <div className="grid grid-cols-3 gap-8">
-  <section className="hover:opacity-100">
-    <div className="info-speaker relative w-full h-full rounded-2xl overflow-hidden block">
-      <img
-        src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e9_speaker%203.png"
-        className="rounded-2xl h-full w-full object-cover transform transition-transform duration-300 hover:scale-110"
-      />
-      <div className="flex flex-col justify-between w-full h-full items-start absolute inset-0 p-8 bg-[rgba(0,0,0,0.5)] backdrop-blur text-white">
-        <h1 className="text-2xl">
-          Michael leads Creatify Labs, empowering creators with
-          cutting-edge tools for immersive digital experiences.
-        </h1>
-        <div className="flex gap-2">
-          <FaFacebookF className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
-          <BiLogoInstagramAlt className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
-          <RiTwitterXFill className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h1>Info</h1>
-    </div>
-  </section>
-</div>
+          <section className="content-speaker cursor-pointer">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden ">
+              <img
+                src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e9_speaker%203.png"
+                className="rounded-2xl h-full w-full object-cover"
+              />
+              <div className="info-speaker  flex flex-col justify-between w-full h-full items-satrt absolute inset-0 p-8 bg-[rgba(0,0,0,0.5)] backdrop-blur text-white">
+                <h1 className="text-2xl">
+                  Michael leads Creatify Labs, empowering creators with
+                  cutting-edge tools for immersive digital experiences.
+                </h1>
+                <div className="flex gap-2 ">
+                  <FaFacebookF className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <BiLogoInstagramAlt className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <RiTwitterXFill className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <h1>Michael Chen</h1>
+              <p>Founder, Creatify Labs</p>
+            </div>
+          </section>
+          <section className="content-speaker cursor-pointer">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden ">
+              <img
+                src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e9_speaker%203.png"
+                className="rounded-2xl h-full w-full object-cover"
+              />
+              <div className="info-speaker  flex flex-col justify-between w-full h-full items-satrt absolute inset-0 p-8 bg-[rgba(0,0,0,0.5)] backdrop-blur text-white">
+                <h1 className="text-2xl">
+                  Michael leads Creatify Labs, empowering creators with
+                  cutting-edge tools for immersive digital experiences.
+                </h1>
+                <div className="flex gap-2 ">
+                  <FaFacebookF className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <BiLogoInstagramAlt className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <RiTwitterXFill className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h1>Michael Chen</h1>
+              <p>Founder, Creatify Labs</p>
+            </div>
+          </section>
+          <section className="content-speaker cursor-pointer">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden ">
+              <img
+                src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80e9_speaker%203.png"
+                className="rounded-2xl h-full w-full object-cover"
+              />
+              <div className="info-speaker  flex flex-col justify-between w-full h-full items-satrt absolute inset-0 p-8 bg-[rgba(0,0,0,0.5)] backdrop-blur text-white">
+                <h1 className="text-2xl">
+                  Michael leads Creatify Labs, empowering creators with
+                  cutting-edge tools for immersive digital experiences.
+                </h1>
+                <div className="flex gap-2 ">
+                  <FaFacebookF className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <BiLogoInstagramAlt className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                  <RiTwitterXFill className="w-8 h-8 bg-neutral-300/40 rounded-full p-2" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h1>Michael Chen</h1>
+              <p>Founder, Creatify Labs</p>
+            </div>
+          </section>
         </div>
       </section>
+
+      <Sponsors />
+      <Pricing />
+
+     
     </div>
   );
 };

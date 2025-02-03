@@ -9,10 +9,25 @@ html {
 
 body {
   scroll-behavior: smooth;
-  background-color: #444;
+  background-color: #010102;
   color: white;
 }
 
 .header {
   background: url("https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png");
+}
+
+.info-speaker {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.content-speaker:hover .info-speaker {
+  opacity: 1;
+}
+
+.content-speaker:hover  img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  
 }
