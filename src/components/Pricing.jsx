@@ -12,7 +12,6 @@ const Pricing = () => {
           for purchase when you reach out.
         </p>
       </section>
-
       <div>
         <div className="pricing-card"></div>
       </div>

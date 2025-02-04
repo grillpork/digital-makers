@@ -7,7 +7,7 @@ import Slider from "./Slider";
 import Sponsors from "./Sponsors";
 import Pricing from "./Pricing";
 
-const Heading = () => {
+export default function Heading() {
   return (
     <div className="font-sans font-medium">
       <header className=".header flex flex-col justify-center items-center w-full h-[80vh]">
@@ -39,15 +39,13 @@ const Heading = () => {
 
       <Slider />
 
-      <section
-        className="grid grid-cols-2 gap-8 max-w-[1280px] mx-auto mt-24 "
-      >
+      <section className="grid grid-cols-2 gap-8 max-w-[1280px] mx-auto mt-24 ">
         <h1 className="text-xl uppercase">about the conference</h1>
-        <div className="flex flex-col justify-start items-starttext-start font-medium ">
+        <div className="flex flex-col justify-start items-center font-medium ">
           <h1 className="text-[48px] flex flex-col font-bold text-base/18 mb-10 ">
-            Where Digital Creater Unite and Shape
+            Where Digital Creator Unite and Shape
             <span className="text-[48px] text-neutral-500">
-              Tomorow's Innovation
+              Tomorrow's Innovation
             </span>
           </h1>
 
@@ -120,7 +118,10 @@ const Heading = () => {
         </button>
       </section>
 
-      <section id="speakers" className=" w-full h-[100vh] max-w-[1280px] mx-auto mt-24">
+      <section
+        id="speakers"
+        className=" w-full h-[100vh] max-w-[1280px] mx-auto mt-24"
+      >
         <div className="flex flex-col w-1/2 gap-4 mb-12">
           <h1 className="text-5xl ">All Speakers</h1>
           <p className="text-xl text-neutral-400">
@@ -207,10 +208,6 @@ const Heading = () => {
 
       <Sponsors />
       <Pricing />
-
-     
     </div>
   );
-};
-
-export default Heading;
+}
