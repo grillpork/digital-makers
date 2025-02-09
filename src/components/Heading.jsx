@@ -9,7 +9,7 @@ import Pricing from "./Pricing";
 
 export default function Heading() {
   return (
-    <div className="font-sans font-medium">
+    <div>
       <header className=".header flex flex-col justify-center items-center w-full h-[80vh]">
         <img
           src="https://cdn.prod.website-files.com/67061df890aa3a22852e80c7/67061df890aa3a22852e80db_hero%20ribbon.png"

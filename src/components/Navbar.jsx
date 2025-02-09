@@ -1,10 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * A sticky navigation bar that appears at the top of the page and contains
+ * links to different sections of the website.
+ *
+ * @returns {React.ReactElement} The JSX element for the navbar.
+ */
+/******  42c1f10f-7c0b-4f1d-b7c8-a568c16c0269  *******/
 const Navbar = () => {
   return (
     <motion.div initial={{ y: -100 }} animate={{ y: 0 }}  
-    className=" grid grid-cols-3 content-center py-6 px-8 w-full sticky top-0 z-50 bg-gradient-to-b from-[#000000] to-transparent text-white">
+    className=" grid grid-cols-3 content-center py-6 px-8 w-full fixed top-0 z-50 bg-gradient-to-b from-[#000000] to-transparent text-white">
       <ul className="flex gap-4 text-sm font-medium">
         <a href="#about" onScroll={true} className="p-[10px]">
           ABOUT
@@ -29,7 +37,7 @@ const Navbar = () => {
         <a href="#pricing" onScroll={true}>
           PRICING
         </a>
-        <a href="#sign-in" onScroll={true} className="px-8 py-3 bg-white text-black rounded ">
+        <a href="#sign-in" onScroll={true} className="px-8 py-2 bg-white text-black rounded ">
           SIGN IN
         </a>
       </div>
