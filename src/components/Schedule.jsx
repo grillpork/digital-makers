@@ -32,7 +32,7 @@ const Schedule = () => {
                 scale: openIndex === index ? 1 : 0.3,
               }}
               transition={{ duration: 0.4, ease: "easeInOut", bounce: 0.25 }}
-              className="overflow-hidden"
+              className="overflow-hidden p-4"
             >
               <p className="mt-2 text-gray-600">{faq.answer}</p>
             </motion.div>
