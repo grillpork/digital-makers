@@ -1,14 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * A sticky navigation bar that appears at the top of the page and contains
- * links to different sections of the website.
- *
- * @returns {React.ReactElement} The JSX element for the navbar.
- */
-/******  42c1f10f-7c0b-4f1d-b7c8-a568c16c0269  *******/
 const Navbar = () => {
   return (
     <motion.div initial={{ y: -100 }} animate={{ y: 0 }}  
